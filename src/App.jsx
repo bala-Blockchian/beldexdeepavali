@@ -20,7 +20,7 @@ export default function App() {
   //done
   const load = useCallback(async () => {
     try {
-      const next = await fetchPulse();
+      const next = await fetchPulse(); //fetch the data from the api endpoint
       const previous = prevBurnRef.current;
 
       setDelta(previous == null ? 0 : Math.max(0, next.burn - previous)); //used to show the rate of increase
@@ -52,7 +52,7 @@ export default function App() {
           <DiyaCluster />
           <p className="eyebrow">Diwali · Festival of Lights</p>
           <h1>
-            Diwali with <span>Beldex</span>
+            Diwali with <span className="brand-green">Beldex</span>
           </h1>
           <p className="subhead">Community burn, shared fortune.</p>
         </header>

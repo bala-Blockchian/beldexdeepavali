@@ -1,5 +1,14 @@
 # Changes
 
+## 2026-11-07 — Diwali message copy, green Beldex link, and burn analogy
+
+- Rewrote the message into a clear four-part block: heading, explanation, credits, and wish.
+- Added a heading, **Celebrating Diwali with Beldex**, where `Beldex` is brand green (`#00db09`) and links to `https://beldex.io`.
+- Connected the BDX burn mechanism to Diwali: burning BDX is framed as a “digital firecracker” that removes supply, makes remaining coins rarer, and supports the price.
+- Cleaned up the credit line to “With thanks to every Beldex developer and investor.”
+- Recolored the header’s `Beldex` word green for brand consistency.
+- Added `.intro-title`, `.intro-body`, and `.beldex-link` styles plus the `--beldex-green` token.
+
 ## 2026-11-07 — Diwali message, rename, and stats trim
 
 - Moved the four-line celebration message from the page footer to a styled block **above the burn counter**.

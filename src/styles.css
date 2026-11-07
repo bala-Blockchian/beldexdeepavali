@@ -8,6 +8,7 @@
   --text: #f6ead8;
   --muted: #bda07e;
   --line: rgba(245, 196, 81, 0.22);
+  --beldex-green: #00db09;
 }
 
 * {
@@ -429,29 +430,63 @@ h1 span {
   background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
 }
 
-.intro p {
-  margin: 0 auto 8px;
+.intro-title {
+  margin: 0 auto 10px;
+  color: var(--text);
+  font-size: clamp(1.15rem, 3.2vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
 }
 
-.intro .intro-lead {
-  max-width: 560px;
+.beldex-link {
+  color: var(--beldex-green);
+  font-weight: 750;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 219, 9, 0.45);
+  text-shadow: 0 0 22px rgba(0, 219, 9, 0.35);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    text-shadow 0.2s ease;
+}
+
+.beldex-link:hover,
+.beldex-link:focus-visible {
+  color: #4dff54;
+  border-color: rgba(77, 255, 84, 0.85);
+  text-shadow: 0 0 28px rgba(0, 219, 9, 0.6);
+}
+
+.intro-body {
+  max-width: 580px;
+  margin: 0 auto 14px;
   color: var(--text);
-  font-size: clamp(0.95rem, 2.4vw, 1.08rem);
-  line-height: 1.5;
+  font-size: clamp(0.92rem, 2.3vw, 1.03rem);
+  line-height: 1.6;
 }
 
 .intro .intro-credit {
+  margin: 0 auto 6px;
   color: var(--gold-dim);
   font-size: 0.78rem;
   line-height: 1.5;
 }
 
 .intro p.intro-wish {
-  margin-top: 14px;
+  margin: 14px auto 0;
   color: var(--gold);
   font-size: 0.92rem;
   letter-spacing: 0.06em;
   text-shadow: 0 0 18px rgba(245, 196, 81, 0.25);
+}
+
+h1 span.brand-green {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--beldex-green);
+  text-shadow: 0 0 26px rgba(0, 219, 9, 0.3);
 }
 
 /* ---------- Responsive ---------- */
